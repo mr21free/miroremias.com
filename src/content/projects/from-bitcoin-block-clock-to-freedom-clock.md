@@ -272,7 +272,7 @@ The moment you stop optimizing for approval and start listening to what you trul
 
 The full build (Arduino sketch, wiring/pins, MQTT topics, and setup instructions) is open-source on GitHub:
 
-- Freedom clock: https://github.com/mr21free/freedom_clock_heltec_vme213
+- Freedom clock: https://github.com/mr21free/freedom_clock_heltec_vme
 - Block clock: https://github.com/mr21free/bitcoin_blockclock_heltec_vme213
 
 ---
