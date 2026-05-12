@@ -58,7 +58,7 @@ My brain didn’t feel grounded. It didn’t feel motivated. It felt… nothing.
 
 It immediately translated it into:
 
-> “Cool. So… a few years.”
+> Cool. So… a few years.
 
 That number is correct. It just does not feel *human*.
 
@@ -146,7 +146,7 @@ Not in blocks. Not only in fiat. In human units:
 
 This is basically the question behind FIRE, stripped down to the core:
 
-> “If I stopped earning tomorrow, how long could I keep living the life I want?”
+> If I stopped earning tomorrow, how long could I keep living the life I want?
 
 But the second number changed the product for me.
 
@@ -179,11 +179,11 @@ It now supports:
 
 That last part matters a lot. The device is no longer only asking:
 
-> “How much freedom do I have?”
+> How much freedom do I have?
 
 It can also ask:
 
-> “Am I moving in the right direction?”
+> Am I moving in the right direction?
 
 That is more useful than a price chart. A price chart makes you think like a trader. A freedom-change view makes you think like a person designing a life.
 
@@ -287,7 +287,7 @@ That last point is important.
 
 The goal is not to turn this into another closed gadget. The goal is to create a simple object and a clear guide that helps someone else ask their own version of the question:
 
-> “How much of my life have I already bought back?”
+> How much of my life have I already bought back?
 
 Bitcoin isn’t just a network. It’s a tool for *reclaiming your time*.
 
