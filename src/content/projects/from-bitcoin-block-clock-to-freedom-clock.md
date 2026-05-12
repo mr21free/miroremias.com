@@ -2,7 +2,7 @@
 title: From Block Clock to Freedom Clock - The Metric That Finally Clicked
 description: "I built a Bitcoin block clock because protocol time fascinated me. Then I rebuilt it into something that made more sense to my actual life: a Freedom Clock that turns savings into time, shows how much of my remaining life is covered, and reminds me not to waste the time I still have."
 pubDate: 2026-02-12
-updatedDate: 2026-04-29
+updatedDate: 2026-05-12
 heroImage: ../../assets/blog-block-clock.png
 author: Miro Remias
 draft: false
@@ -103,7 +103,7 @@ That was the moment the block clock transformed into something else.
 
 ---
 
-## The Freedom Clock (v2)
+## The Freedom Clock
 
 So I started building a second version.
 
@@ -118,16 +118,21 @@ But a different purpose:
 > **Not “Bitcoin ticks.”**  
 > **“How much freedom have I bought?”**
 
+If you landed here and just want the current project page, calculator, and build guide, start here:
+
+[freedomclock.io](https://freedomclock.io/)
+
+That site is the simple front door. This article is the longer story behind why I built it.
+
 ![Freedom Clock - Main Screen](/images/posts/blog8_freedom_clock_screen_1-sq.jpeg)
 > The main screen: expected freedom time, expected lifetime left, and freedom coverage.
 
 ![Freedom Clock - Details Screen](/images/posts/blog8_freedom_clock_screen_2-sq.jpeg)
-> The second screen: the assumptions behind the number.
-
+> An additional screen shows the assumptions behind the number.
 
 ### What it shows now
 
-The new version is built around **three connected signals**:
+The Freedom Clock is still built around **three connected signals**:
 
 1. **Expected freedom time:** how long the portfolio could support the chosen lifestyle.
 2. **Expected lifetime left:** a quiet reminder that time itself is limited.
@@ -147,9 +152,40 @@ But the second number changed the product for me.
 
 The device is no longer only about money. It is also a small memento mori on my desk. It reminds me that even if the portfolio keeps growing, the other clock keeps moving too. The goal is not to stare at the number and feel clever. The goal is to ask whether I am using my time well.
 
-The freedom number depends on assumptions: monthly expenses, inflation, portfolio growth, BTC price, life expectancy, and the withdrawal model. That is why the device now has a second screen. The first screen is emotional. The second screen is trust.
+The freedom number depends on assumptions: monthly expenses, inflation, portfolio growth, BTC price, life expectancy, and the withdrawal model. That is why the device now has supporting screens. The main screen is emotional. The supporting screens create trust.
+
+The current version has one main screen and three additional supporting screens:
+
+- **Main screen:** expected freedom time, expected lifetime left, and freedom coverage.
+- **Freedom change screen:** freedom gained or lost over recent periods.
+- **Wealth screen:** current wealth and wealth change over recent periods.
+- **Settings and inputs screen:** the assumptions behind the calculation, plus device and firmware information.
 
 It turns Bitcoin from an abstract asset into a **compass**.
+
+### What changed since the first public version
+
+The early version already answered the main question. The newer version makes the device much more usable as a real object on a desk.
+
+It now supports:
+
+- **Motivational quote of the day:** an optional quote screen that turns the device into a calmer reminder between number updates.
+- **Software updates directly from GitHub:** the device can check releases and install new firmware without reflashing from scratch.
+- **PIN-protected setup:** setup can be protected so the configuration is not casually exposed.
+- **Various time formats:** for example years/months/weeks or weeks-only display.
+- **Larger 2.9-inch screen support:** the same project now supports the Heltec Vision Master E290, not only the smaller E213.
+- **Wealth change over time:** for example 7-day and 30-day movement.
+- **Freedom change over time:** how much freedom was gained or lost over recent periods.
+
+That last part matters a lot. The device is no longer only asking:
+
+> “How much freedom do I have?”
+
+It can also ask:
+
+> “Am I moving in the right direction?”
+
+That is more useful than a price chart. A price chart makes you think like a trader. A freedom-change view makes you think like a person designing a life.
 
 ### Why this is more motivational than network stats
 
@@ -186,7 +222,7 @@ In other words: it’s still not a consumer gadget. It’s a **habit**.
 
 A reminder on your desk that your attention is valuable. That your time is finite. That you’re building toward something.
 
-The main screen is intentionally simple. It should be readable in one glance. The details screen exists so the main screen can stay calm without hiding the assumptions.
+The main screen is intentionally simple. It should be readable in one glance. The supporting screens exist so the main screen can stay calm without hiding the assumptions.
 
 ---
 
@@ -214,7 +250,7 @@ The first versions were more about getting the metric onto the screen.
 
 The newer version made something obvious: if the number is emotional, the assumptions need to be visible. Otherwise it feels like magic.
 
-So the second screen shows the inputs: BTC amount, BTC price, portfolio growth, inflation, monthly expenses, birth year, life expectancy, and withdrawal mode.
+So an additional screen shows the inputs: BTC amount, BTC price, portfolio growth, inflation, monthly expenses, birth year, life expectancy, withdrawal mode, and firmware information.
 
 That is not there to make the device feel complicated. It is there to make the main screen believable.
 
@@ -224,28 +260,34 @@ I still include price, not as a signal to act, but as a translator people natura
 
 The Freedom Clock shifts the focus: price becomes secondary to freedom time and choice.
 
+### 5) A physical object needs more than software
+
+The code matters, but the object matters too.
+
+A bare board on a desk feels like a prototype. A small case, a proper stand, and a clear setup flow make it feel like something another person could actually live with.
+
+That is the next frontier for this project: not only making the firmware better, but making the whole build easier to understand, easier to assemble, and easier to make your own.
+
 ---
 
 ## Next steps: where this goes from here
 
-The current version has two screens:
+The next step is probably not more data. It is making the object feel complete.
 
-- a main screen for expected freedom time, expected lifetime left, and freedom coverage
-- a details screen for the assumptions behind the calculation
+I want to work on:
 
-That already feels much closer to the product I wanted.
+- **a 3D-printed case** that makes the device feel like a finished desk object, not a dev board
+- **a better stand or enclosure** so it can live naturally on a desk, shelf, or bedside table
+- **iterating on the name** and seeing how people react to “Freedom Clock”
+- **showing it to more people** outside the Bitcoin bubble
+- **making it useful for others**, not only for my own setup
+- **helping others build their own Freedom Clock** and make it theirs
 
-The next step is probably not more data. It is better rhythm.
+That last point is important.
 
-I want this device to become something you check weekly, not something that pulls you into price anxiety. A useful future view could show how much freedom changed since the last check-in:
+The goal is not to turn this into another closed gadget. The goal is to create a simple object and a clear guide that helps someone else ask their own version of the question:
 
-- freedom gained or lost since last week
-- time left reduced by another week
-- whether the gap is closing or widening
-
-That would make the device less like a dashboard and more like a ritual.
-
-And I will probably keep iterating on the name too. Right now, **Freedom Clock** is the best fit because it says the quiet part out loud:
+> “How much of my life have I already bought back?”
 
 Bitcoin isn’t just a network. It’s a tool for *reclaiming your time*.
 
@@ -268,12 +310,22 @@ The moment you stop optimizing for approval and start listening to what you trul
 
 ---
 
-## Get the code
+## Get the code, parts list, and build guide
 
-The full build (Arduino sketch, wiring/pins, MQTT topics, and setup instructions) is open-source on GitHub:
+The GitHub repository is not only a code dump. It is the starting point for building your own Freedom Clock.
 
-- Freedom clock: https://github.com/mr21free/freedom_clock_heltec_vme
-- Block clock: https://github.com/mr21free/bitcoin_blockclock_heltec_vme213
+It contains the software, setup notes, supported hardware, build instructions, firmware releases, and the practical details needed to get started.
+
+Start here:
+
+- Project website, calculator, and simple overview: https://freedomclock.io/
+- Freedom Clock build guide, parts list, firmware releases, and source code: https://github.com/mr21free/freedom_clock_heltec_vme
+- Original block clock project: https://github.com/mr21free/bitcoin_blockclock_heltec_vme213
+
+If you want the shortest path, start with the website.  
+If you want to build, modify, or understand the firmware, start with GitHub.
+
+The idea is simple: order the parts, upload the software, enter your assumptions, and then make the device yours.
 
 ---
 
@@ -291,3 +343,5 @@ The full build (Arduino sketch, wiring/pins, MQTT topics, and setup instructions
 - Treat privacy as a feature.
 - Avoid turning personal data into something visible to strangers, guests, or cameras.
 - Prefer ranges or progress indicators over exact numbers.
+- Make setup understandable for someone who is not you.
+- Design the object around the behavior you want, not the data you happen to have.
