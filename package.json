@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "postbuild": "cp dist/sitemap-0.xml dist/sitemap.xml && sed -i '' 's|sitemap-0.xml|sitemap.xml|g' dist/sitemap-index.xml",
+    "postbuild": "cp dist/sitemap-0.xml dist/sitemap.xml && sed -i.bak 's|sitemap-0.xml|sitemap.xml|g' dist/sitemap-index.xml && rm -f dist/sitemap-index.xml.bak",
     "preview": "astro preview",
     "astro": "astro"
   },
