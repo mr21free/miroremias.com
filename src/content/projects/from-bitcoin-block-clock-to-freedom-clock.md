@@ -320,7 +320,7 @@ Start here:
 
 - Project website, calculator, and simple overview: https://freedomclock.io/
 - Freedom Clock build guide, parts list, firmware releases, and source code: https://github.com/mr21free/freedom-clock
-- Original block clock project: https://github.com/mr21free/bitcoin_blockclock_heltec_vme213
+- Original block clock project: https://github.com/mr21free/blockclock
 
 If you want the shortest path, start with the website.  
 If you want to build, modify, or understand the firmware, start with GitHub.
